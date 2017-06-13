@@ -10,12 +10,12 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:Image ID="Image1" runat="server" Height="200px" ImageUrl="~/Images/Logo.jpg" Width="100%" />
+        <asp:Image ID="Image1" runat="server" Height="200px" ImageUrl="~/Images/pizzaLogo1.jpg" Width="100%" />
         <br/>
-        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Font-Bold="True" Font-Names="Baskerville Old Face" ForeColor="#660033">
             <Items>
-                <asp:MenuItem NavigateUrl="~/Admin/ViewItems.aspx" Text="View Items" Value="View Items"></asp:MenuItem>
-                <asp:MenuItem NavigateUrl="~/Admin/AddItems.aspx" Text="Add Items" Value="Add Items"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/ViewItems.aspx" Text="View Items |" Value="View Items"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/AddItems.aspx" Text="Add Items |" Value="Add Items"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/Admin/ViewUsers.aspx" Text="View Users" Value="View Users"></asp:MenuItem>
             </Items>
         </asp:Menu>

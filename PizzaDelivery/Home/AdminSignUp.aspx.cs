@@ -24,10 +24,11 @@ namespace PizzaDelivery.Home
                 objConnection.Open();
                 var objCommand = new SqlCommand();
                 objCommand.Connection = objConnection;
-                objCommand.CommandText = "insert into tbl_users values('" + txtFirstName.Text + "','" + txtLastName.Text + "','"
+                objCommand.CommandText = "insert into tbl_admin values('" + txtFirstName.Text + "','" + txtLastName.Text + "','"
                                                                            + txtEmail.Text + "','" + txtPassword.Text + "','"
                                                                           + txtMobileNo.Text + "','" + txtCity.Text + "',getdate())";
                 objCommand.ExecuteNonQuery();
+                Response.Redirect("~/Home/AdminSignIn.aspx");
             }
         }
     }

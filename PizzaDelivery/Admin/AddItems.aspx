@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="AddItems.aspx.cs" Inherits="PizzaDelivery.Admin.AddItems" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-    <div style="margin-left: 400px">
+    <div style="margin-left: 400px;align-content: center;margin-top: 40px;height:200px;width: 400px">
         
-        <table style="width: 66%">
+        <table>
             <tr>
                 <td>
                     <asp:Label ID="Label1" runat="server" Text="Item Name"></asp:Label>
@@ -38,7 +38,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <asp:Button ID="btnSave" runat="server" Text="Save" />
+                    <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
                 </td>
                 <td>&nbsp;</td>
             </tr>

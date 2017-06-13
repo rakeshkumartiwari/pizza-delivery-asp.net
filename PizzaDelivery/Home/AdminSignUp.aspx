@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeBehind="AdminSignUp.aspx.cs" Inherits="PizzaDelivery.Home.AdminSignUp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="margin-left: 400px">
-        <table style="width: 35%">
+    <div style="margin-left: 400px;margin-top: 40px;height: 300px;width: 400px;align-content: center">
+        <table style="height: 300px;width: 400px">
     <tr>
         <td>
             <asp:Label ID="Label1" runat="server" Text="First Name"></asp:Label>

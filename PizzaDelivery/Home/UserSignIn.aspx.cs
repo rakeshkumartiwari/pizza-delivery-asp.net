@@ -30,6 +30,7 @@ namespace PizzaDelivery.Home
                 {
                     if (txtUserName.Text == objDataSet.Tables[0].Rows[0]["Email"].ToString() && txtPassword.Text == objDataSet.Tables[0].Rows[0]["Password"].ToString())
                     {
+                        Session["UserName"] = objDataSet.Tables[0].Rows[0]["FirstName"].ToString();
                         Response.Redirect("~/User/UsersHome.aspx");
                     }
                     else
