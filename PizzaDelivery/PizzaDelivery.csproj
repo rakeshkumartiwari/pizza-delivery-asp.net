@@ -57,10 +57,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\DeleteItem.aspx" />
+    <Content Include="Admin\DeleteUser.aspx" />
+    <Content Include="Admin\EditItem.aspx" />
+    <Content Include="Admin\EditUser.aspx" />
     <Content Include="HomeMaster.Master" />
     <Content Include="Images\1.jpg" />
     <Content Include="Images\pizzaLogo.jpg" />
     <Content Include="Images\pizzaLogo1.jpg" />
+    <Content Include="Styles\StyleSheet.css" />
     <Content Include="UserMaster.Master" />
     <Content Include="AdminMaster.Master" />
     <None Include="Web.Debug.config">
@@ -103,6 +108,34 @@
     </Compile>
     <Compile Include="Admin\AddItems.aspx.designer.cs">
       <DependentUpon>AddItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DeleteItem.aspx.cs">
+      <DependentUpon>DeleteItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DeleteItem.aspx.designer.cs">
+      <DependentUpon>DeleteItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DeleteUser.aspx.cs">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DeleteUser.aspx.designer.cs">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditItem.aspx.cs">
+      <DependentUpon>EditItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditItem.aspx.designer.cs">
+      <DependentUpon>EditItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\ViewItems.aspx.cs">
       <DependentUpon>ViewItems.aspx</DependentUpon>

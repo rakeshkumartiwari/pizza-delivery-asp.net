@@ -27,7 +27,10 @@ namespace PizzaDelivery.Admin
                 string fileName = "";
                 if (FileUpload1.HasFile)
                 {
-                     fileName = "~/Images/"+Path.GetFileName(FileUpload1.FileName);
+                    fileName = FileUpload1.FileName;
+                    FileUpload1.SaveAs(Server.MapPath("~/Images/" + fileName));
+
+
                 }
                 objCommand.CommandText = "insert into tbl_items values('" + txtItemName.Text + "'," + Convert.ToDecimal(txtItemPrice.Text) + ",'"
                                                                            + fileName + "','" + txtItemDescription.Text + "',getdate())";

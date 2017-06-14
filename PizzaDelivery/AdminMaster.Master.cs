@@ -11,7 +11,10 @@ namespace PizzaDelivery
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["AdminName"] != null)
+            {
+                lblAdmin.Text = "Welcome" + " " + Session["AdminName"].ToString();
+            }
         }
     }
 }

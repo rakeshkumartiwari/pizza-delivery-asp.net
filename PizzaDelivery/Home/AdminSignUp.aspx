@@ -60,7 +60,7 @@
     </tr>
     <tr>
         <td>
-            <asp:Button ID="btnSignUp" runat="server" Text="Sign Up" OnClick="btnSignUp_Click" />
+            <asp:Button ID="btnSignUp" runat="server" Text="Sign Up" OnClick="btnSignUp_Click"  CssClass="btn"/>
         </td>
         <td>&nbsp;</td>
     </tr>

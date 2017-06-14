@@ -21,10 +21,10 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="btnSignIn" runat="server" Text="Sign In" Width="130px" OnClick="btnSignIn_Click" />
+                    <asp:Button ID="btnSignIn" runat="server" Text="Sign In" Width="130px" OnClick="btnSignIn_Click" CssClass="btn" />
                 </td>
                 <td>
-                    <asp:Button ID="btnSignUp" runat="server" Text="Sign Up" Width="130px" OnClick="btnSignUp_Click" />
+                    <asp:Button ID="btnSignUp" runat="server" Text="Sign Up" Width="130px" OnClick="btnSignUp_Click" CssClass="btn"/>
                 </td>
 
             </tr>

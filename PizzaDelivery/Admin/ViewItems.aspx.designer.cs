@@ -13,12 +13,12 @@ namespace PizzaDelivery.Admin {
     public partial class ViewItems {
         
         /// <summary>
-        /// lblAdmin control.
+        /// gridViewItems control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAdmin;
+        protected global::System.Web.UI.WebControls.GridView gridViewItems;
     }
 }

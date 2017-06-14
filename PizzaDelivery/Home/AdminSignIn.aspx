@@ -20,10 +20,10 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="btnSignIn" runat="server" Text="Sign In" Width="130px" OnClick="btnSignIn_Click1" />
+                    <asp:Button ID="btnSignIn" runat="server" Text="Sign In" Width="130px" OnClick="btnSignIn_Click1"  CssClass="btn"/>
                 </td>
                 <td>
-                    <asp:Button ID="btnSignUp" runat="server" Text="Sign Up" Width="130px" />
+                    <asp:Button ID="btnSignUp" runat="server" Text="Sign Up" Width="130px" CssClass="btn" />
                 </td>
 
             </tr>

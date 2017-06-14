@@ -5,20 +5,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Admin Master</title>
-    
+    <link href="Styles/StyleSheet.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
         <asp:Image ID="Image1" runat="server" Height="200px" ImageUrl="~/Images/pizzaLogo1.jpg" Width="100%" />
         <br/>
-        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Font-Bold="True" Font-Names="Baskerville Old Face" ForeColor="#660033">
+        <asp:Menu CssClass="menu" ID="Menu1" runat="server" Orientation="Horizontal" Font-Bold="True" Font-Names="Baskerville Old Face" ForeColor="#660033">
             <Items>
                 <asp:MenuItem NavigateUrl="~/Admin/ViewItems.aspx" Text="View Items |" Value="View Items"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/Admin/AddItems.aspx" Text="Add Items |" Value="Add Items"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/Admin/ViewUsers.aspx" Text="View Users" Value="View Users"></asp:MenuItem>
             </Items>
         </asp:Menu>
+        <asp:Label ID="lblAdmin" runat="server" ForeColor="#660033"></asp:Label>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>

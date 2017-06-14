@@ -23,7 +23,7 @@ namespace PizzaDelivery.Home
             using (var objConnection = new SqlConnection(connectionString))
             {
                 objConnection.Open();
-                var objCommand = new SqlCommand("select * from tbl_users", objConnection);
+                var objCommand = new SqlCommand("select * from tbl_admin", objConnection);
                 var objDataSet = new DataSet();
                 var objAdapter = new SqlDataAdapter(objCommand);
                 objAdapter.Fill(objDataSet);
@@ -33,7 +33,7 @@ namespace PizzaDelivery.Home
                     if (txtUserName.Text == objDataSet.Tables[0].Rows[0]["Email"].ToString() && txtPassword.Text == objDataSet.Tables[0].Rows[0]["Password"].ToString())
                     {
                         Session["AdminName"] = objDataSet.Tables[0].Rows[0]["FirstName"].ToString();
-                        Response.Redirect("~/Admin/ViewItems.aspx");
+                        Response.Redirect("~/Admin/ViewUsers.aspx");
 
                     }
                     else

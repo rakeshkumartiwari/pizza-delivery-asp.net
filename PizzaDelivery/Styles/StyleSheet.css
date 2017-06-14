@@ -1,0 +1,29 @@
+﻿body {
+}
+.btn {
+    width: 150px;
+    height: 40px;
+    background-color: lightcoral;
+}
+.btn:hover {
+
+        background-color: lightsalmon;
+}
+.menu {
+    width: 1000px;
+    background-color: lightcoral;
+}
+.menu li a {
+    
+    
+}
+.menu li a:hover {
+   
+    color: blue;
+}
+#form1 {
+    width: 1000px;
+    margin:0px auto;
+    background-color: lightcyan;
+
+}
